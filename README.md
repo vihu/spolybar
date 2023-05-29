@@ -5,17 +5,21 @@ integrating Spotify controls directly into your setup. Whether you're using
 ncspot or the standard Spotify app via playerctl, Spolybar provides seamless,
 music control and monitoring.
 
-# Features
+## Screenshot
 
 ![Demo](screenshots/spolybar.gif)
 
+## Features
+
 - The text appears horizontally scrolling. If neither ncspot or spotify are
   running, the text simply appears as "Spotify not running...".
+- The scrolling text immediately pauses if the track is paused, a good visual
+  indicator whether something is playing.
 - click-left: Previous track
 - click-right: Next track
 - click-middle: Play/Pause track
 
-# Dependencies
+## Dependencies
 
 - Required:
     - [polybar](https://github.com/polybar/polybar)
@@ -26,7 +30,7 @@ music control and monitoring.
     - [playerctl](https://github.com/altdesktop/playerctl). You'd need spotify
       app as well with this.
 
-# Structure
+## Structure
 
 ```
 spolybar
@@ -42,7 +46,7 @@ spolybar
    └─ spolyfi.ini
 ```
 
-# Usage
+## Usage
 
 - Merge contents of `bar/spolybar.ini` to your polybar config where you place
   other bars (if you're doing a single file config).
@@ -77,7 +81,7 @@ so in your `launch.sh` script:
 
 `polybar spolybar 2>&1 | tee -a /tmp/polybar.log & disown`
 
-# Extra
+## Extra
 
 You can use the scripts with `sxhkd` as well. For example, in your `sxhkdrc`:
 
