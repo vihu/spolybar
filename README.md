@@ -7,6 +7,8 @@ music control and monitoring.
 
 # Features
 
+![Demo](screenshots/spolybar.gif)
+
 - The text appears horizontally scrolling. If neither ncspot or spotify are
   running, the text simply appears as "Spotify not running...".
 - click-left: Previous track
